@@ -14,7 +14,7 @@
     <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-
+    
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Import Google Icon Font-->
@@ -23,7 +23,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     
     <style>
-      
+       /* label color */
+      .input-field label {
+        color: #000;
+      }
+      /* label focus color */
+      input[type=email]:focus + label {
+        color: #000;
+      }
     </style>
   </head>
   <body>
@@ -31,10 +38,48 @@
       <div class="row">
         <div class="col s12 l4 valign-wrapper" style="min-height: 100vh; margin-bottom: -20px">
           <div class="container">
-            hello
+
+            <form class="login-form">
+              <div class="row">
+              </div>
+              <div class="row">
+                <div class="input-field blue-text col s12">
+                  <i class="material-icons prefix">mail_outline</i>
+                  <input class="validate" id="email" type="email">
+                  <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field blue-text col s12">
+                  <i class="material-icons prefix">lock_outline</i>
+                  <input id="password" type="password">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">          
+                <div class="input-field col s12 m12 l12  login-text">
+                    <input type="checkbox" id="remember-me" />
+                    <label for="remember-me">Remember me</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <a href="#" class="btn blue darker-2 waves-effect waves-ripple col s12">Login</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6 m6 l6">
+                  <p class="margin medium-small"><a href="#">Register Now!</a></p>
+                </div>
+                <div class="input-field col s6 m6 l6">
+                    <p class="margin right-align medium-small"><a href="#">Forgot password?</a></p>
+                </div>          
+              </div>
+            </form>
+
           </div>
         </div>
-        <div class="col s12 l8 grey darken-4 white-text valign-wrapper" style="min-height: 100vh; margin-bottom: -20px;">
+        <div class="col s12 l8 blue white-text valign-wrapper" style="min-height: 100vh; margin-bottom: -20px;">
           <div class="container">
             hello
           </div>
