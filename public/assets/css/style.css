@@ -1,15 +1,39 @@
+.input-field input:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #03a9f3 !important;
+}
 
-  /* label focus color */
-  .input-field input:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-    color: #03a9f3 !important;
-   }
+.input-field input:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #03a9f3 !important;
+  box-shadow: 0 1px 0 0 #03a9f3 !important;
+}
 
-/* label underline focus color */
-   .input-field input:focus, .materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #03a9f3 !important;
-    box-shadow: 0 1px 0 0 #03a9f3 !important;
-   }
+.input-field i {
+  color: #03a9f3 !important;
+}
 
-   .input-field i {
-    color: #03a9f3 !important;
-   }
+.active-link {
+  font-size: 28px;
+  padding-right: 28px;
+  cursor: default;
+}
+
+.inactive-link {
+  color: #607D8B;
+  font-size: 14px;
+  transition-duration: .4s;  
+}
+
+.inactive-link:hover {
+  color: #607D8B;
+  font-size: 24px;
+  padding-right: 28px;
+}
+
+.title-login {
+  font-size: 68px;
+}
+
+.paragraph-login {
+  font-size: 20px;
+  line-spacing: 18px;
+}
