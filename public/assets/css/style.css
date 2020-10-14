@@ -1,3 +1,8 @@
+.fill-height{
+  min-height: 100vh; 
+  margin-bottom: -20px;
+}
+
 .input-field input:focus + label, .materialize-textarea:focus:not([readonly]) + label {
   color: #03a9f3 !important;
 }
@@ -35,5 +40,5 @@
 
 .paragraph-login {
   font-size: 20px;
-  line-spacing: 18px;
+  line-height: 38px;
 }
